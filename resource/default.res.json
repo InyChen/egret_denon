@@ -1,0 +1,45 @@
+{
+	"groups": [
+		{
+			"keys": "cangshan_mp3,leaf_png,leaf_json,long_bg_jpg,tlbblogo_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/cangshan.mp3",
+			"type": "sound",
+			"name": "cangshan_mp3"
+		},
+		{
+			"url": "assets/leaf.png",
+			"type": "image",
+			"name": "leaf_png"
+		},
+		{
+			"url": "assets/leaf.json",
+			"type": "json",
+			"name": "leaf_json"
+		},
+		{
+			"name": "long_bg_jpg",
+			"type": "image",
+			"url": "assets/long_bg.jpg"
+		},
+		{
+			"name": "tlbblogo_png",
+			"type": "image",
+			"url": "assets/tlbblogo.png"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+  "engineVersion": "5.2.12",
+  "compilerVersion": "5.2.12",
+  "template": {},
+  "target": {
+    "current": "web"
+  },
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "game"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "assetsmanager"
+    },
+    {
+      "name": "eui"
+    },
+    {
+      "name": "promise"
+    },
+    {
+      "name": "socket"
+    },
+    {
+      "name": "socketio",
+      "path": "./libs/socketio"
+    },
+    {
+      "name": "particle",
+      "path": "./libs/particle"
+    }
+  ],
+  "targets": {
+    "android": {
+      "appname": "Denon",
+      "packagename": "com.stdmob.denon"
+    }
+  }
+}
