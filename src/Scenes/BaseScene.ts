@@ -1,11 +1,24 @@
 class BaseScene extends egret.DisplayObjectContainer{
 
+    /**
+     * 研究热重载的支持
+     */
+    public static instances = [];
+    public static reload(){
+        if(BaseScene.instances&&BaseScene.instances.length>0){
+            BaseScene.instances.forEach(scene=>{
+                scene.onReload();
+            })
+        }
+    }
+
     public currentBgm : egret.Sound;
     public currentBgmChannel : egret.SoundChannel;
     public bgmList : Array<egret.Sound> = []
 
     constructor(){
         super()
+        BaseScene.instances.push(this);
         this.addEventListener(egret.Event.ADDED_TO_STAGE,this.onAddToStage,this)
     }
 
@@ -58,6 +71,7 @@ class BaseScene extends egret.DisplayObjectContainer{
             }
             egret.Tween.get(this).to({alpha:0},1000).call(()=>{
                 this.parent.removeChild(this)
+                BaseScene.instances.splice(BaseScene.instances.indexOf(this),1)
                 resolve()
             })
         })

@@ -23,7 +23,7 @@ class LuoyangScene extends BaseScene {
         menu.text = "洛阳";
         menu.width = 200;
         menu.textAlign = "center";
-        menu.x = this.width/2 - 100;
+        menu.x = this.width/2;
         menu.y = this.height/2+150;
         menu.size = 30;
         menu.stroke = 3;
